@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/Rela_Login"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activites.Login">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/Scroll"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/Rela_one"
+            android:background="@drawable/bc_login"
+            android:layout_height="@dimen/_220sdp">
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_logo"
+                android:id="@+id/logo"
+                />
+
+
+        </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_10sdp"
+                app:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="10dp"
+                android:layout_below="@+id/Rela_one"
+                android:id="@+id/card_email"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                card_view:cardCornerRadius="@dimen/_25sdp">
+
+                <EditText
+                    android:id="@+id/login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#878787"
+                    android:drawableStart="@drawable/ic_email"
+                    android:backgroundTint="#fff"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="@string/email"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColorHint="#878787"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_10sdp"
+                app:cardBackgroundColor="@android:color/white"
+                card_view:cardElevation="10dp"
+                android:id="@+id/card_password"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_below="@+id/card_email"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                card_view:cardCornerRadius="20dp">
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:inputType="textPassword"
+                    android:textColor="#878787"
+                    android:textColorHint="#878787"
+                    android:drawableStart="@drawable/ic_password"
+                    android:backgroundTint="#fff"
+                    android:drawablePadding="@dimen/_10sdp"
+
+                    android:hint="@string/password"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:layout_below="@+id/card_email"
+                    />
+                <!--</android.support.design.widget.TextInputLayout>-->
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_password"
+                android:text="@string/forgetpass"
+                android:textColor="#8f8f8f"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:id="@+id/Forget_password"
+                android:layout_marginEnd="@dimen/_20sdp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/Forget_password"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/bc_btnlogin"
+                android:text="@string/login"
+                android:id="@+id/Btn_Sigin"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+
+            <!--<ProgressBar-->
+                <!--android:layout_width="@dimen/_40sdp"-->
+                <!--android:layout_height="@dimen/_40sdp"-->
+                <!--android:id="@+id/progrosslogin"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_below="@+id/card_password"-->
+                <!--/>-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/Btn_Sigin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noacc"
+                    android:textColor="#898989"
+                    android:textStyle="bold"
+                    android:id="@+id/noacc"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register"
+                    android:textColor="#f17536"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_toEndOf="@+id/noacc"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Task_EgyAdv</string>
+    <string name="email">Email / Mobile</string>
+    <string name="password">Password</string>
+    <string name="forgetpass">Forget Password ?</string>
+    <string name="login">LOGIN</string>
+    <string name="noacc">Don\'t have an account ?</string>
+    <string name="register">Register</string>
+    <string name="insertpass">Please Insert Password</string>
+    <string name="insertemail">Please Insert Email</string>
+     <string name="loginsucces">Login Success ..</string>
+    <string name="invalidemail">Invalid User Information</string>
+</resources>
